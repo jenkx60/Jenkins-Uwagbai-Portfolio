@@ -1,0 +1,1344 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #494051;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: #66BFBF;
+    margin: 50px auto 0 auto;
+    font-family: 'Merriweather', cursive;
+    font-size: 5.3rem;
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    line-height: 2.2;
+}
+
+hr {
+    border: double 10px;
+    border-color: #135353;
+    border-bottom: none;
+    width: 4%;
+    margin: 67px auto;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.top-container {
+    background-image: url(images/code.jpg);
+    position: relative;
+    padding-top: 100.5px;
+}
+
+.middle-container {
+    margin: 70px 0;
+}
+
+.bottom-container {
+    background-color: #a45dad;
+    padding: 50px 0 20px;
+    background-image: url(images/code.jpg);
+}
+
+.skill-row {
+    width: 51%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+    text-align: left;
+}
+
+.computer-img {
+    float: right;
+    margin-left: 30px;
+    width: 20px;
+}
+
+.idea-img {
+    float: right;
+    margin-left: 30px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.80rem;
+    padding: 20px 0;
+}
+
+.topheader {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.botttomheader {
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
+}
+
+.contact-me {
+    width: 41%;
+    margin: 40px auto 60px;
+}
+
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    border-radius:8px;
+    color: #ffffff;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 12px;
+    text-shadow: 1px 1px 21px #000000;
+    border: 0 #337FED solid;
+    text-decoration: none;
+    display:inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    border: solid #337FED 1px;
+    background: #30E3CD;
+    background-image: -webkit-linear-gradient(top, #30E3CD, #2BC4AD);
+    background-image: -moz-repeating-linear-gradient(top, #30E3CD, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CD, #2BC4AD);
+    border-radius: 20px;
+    text-decoration: none;
+} */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#header {
+    background-color: #f1f1f1;
+  }
+
+  .hero {
+    height: 10vh;
+    width: 100%;
+    background-color: #f1f1ff;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cfcfcf;
+    color: #201f1f;
+    z-index: 1000;
+    position: fixed;
+  }
+  
+  .nav_logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .nav_logo span {
+    color: #69eeff;
+  }
+  
+  .nav_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav_menu.show {
+    display: block;
+  }
+
+  #nav_menu.hide {
+    display: none;
+  }
+
+  .nav_text.menu {
+    display: block;
+  }
+
+  .nav_text.close {
+    display: none;
+  }
+  
+  .nav_text a {
+    color: #201f1f;
+    text-decoration: none;
+    font-weight: 600;
+    /* display: block; */
+    padding: .9rem;
+    margin: 0 20px;
+  }
+  
+  .nav_text a:hover {
+    color: #69eeff;
+  }
+  
+  .nav_list {
+    position: absolute;
+    right: 2rem;
+    display: none;
+  }
+  
+  .hide {
+    /* display: none; */
+  }
+
+  .open {
+    opacity: 1;
+  }
+  .bi {
+    font-size: 3rem;
+    cursor: pointer; 
+  }
+
+
+  /* Section 1 */
+
+  .section_1 {
+    /* height: 50vh; */
+    min-height: 40rem;
+    /* max-height: 70rem; */
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-image: url(https://www.rammaheshwari.com/assets/svg/common-bg.svg);
+    /* filter: blur(8px); */
+  }
+
+  .home {
+    display: flex;
+    padding-top: 10rem;
+  }
+
+  .home_social {
+    background-color: #cfcfcf;
+    padding: 1rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .bi {
+    display: inline-block;
+    font-size: 2rem;
+    padding-bottom: .8rem;
+  }
+
+  .home_content {
+    max-width: 90rem;
+    width: 90%;
+    padding: 0 10rem;
+  }
+
+  .name {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .name_content {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-right: 0.15em solid #69eeff;
+    white-space: nowrap;
+    animation: typing 5s steps(50, end) infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  .name_text {
+    font-size: 1.45rem;
+    text-align: center;
+    padding-top: 1rem;
+    line-height: 2rem;
+  }
+
+  .project_btn {
+    display: inline-block;
+    align-items: end;
+    padding: 2rem 10rem 0 22rem;
+  }
+
+  button {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #69eeff;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+  }
+
+  /* Section 2 */
+
+  .section_2 {
+    min-height: 55rem;
+    max-height: 90rem;
+    width: 100%;
+    position: relative;
+    background-color: #e9e9e9;
+  }
+
+  .about {
+    padding-top: 8rem;
+  }
+
+  .about_head {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  hr {
+    width: 3%;
+    margin: 0 auto;
+    color: #69eeff;
+    border-style: solid;
+    border-bottom-width: 0.30em;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about_content {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .about_info {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-around;
+  }
+
+  .about_info_left {
+    width: 50%;
+    margin-left: -5rem;
+    /* background-color: yellow; */
+    /* margin: 0 auto; */
+  }
+
+  .about_info_left h3 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .about_info_left p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+
+  .about_info_left p > span {
+    font-weight: 700;
+  }
+
+  .btn_contact {
+    margin: 3rem auto;
+  }
+
+  .about_info_right {
+    width: 25%;
+    /* background-color: red; */
+  }
+
+  .skill_head h3 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .skill_base_1 {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .html, .css, .js, .react, .git, .res {
+    max-width: 80%;
+    background-color: #c1cacb;
+    text-align: center;
+    margin: .5rem auto;
+    padding: .4rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .2rem;
+  }
+
+  .skill_base_2 {
+    display: flex;
+    align-items: start;
+  }
+
+  /* Section 3 */
+
+  .section_3 {
+    width: 100%;
+    min-height: 80rem;
+    background-color: #f7f7f7;
+  }
+
+  .project {
+    padding-top: 8rem;
+  }
+
+  .project_head {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .project_text {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .pass_gen {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    gap: 8rem;
+  }
+
+  .pass_gen_text {
+    margin-left: 3rem;
+  }
+
+  .pass_gen_des a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .pass_gen_text h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  } 
+
+  .pass_gen p {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .order_summary {
+    width: 70%;
+    display: flex;
+    margin: 7rem auto;
+    gap: 5rem;
+  }
+
+  .order_summary_des a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .order_summary_text h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  } 
+
+  .order_summary_text p {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .blog_card {
+    width: 70%;
+    display: flex;
+    margin: 7rem auto;
+    gap: 5rem;
+  }
+
+  .blog_card_des a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .blog_card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  } 
+
+  .blog_card p {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .social_links_card {
+    width: 70%;
+    display: flex;
+    margin: 7rem auto;
+    gap: 5rem;
+  }
+
+  .social_links_card_des a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .social_links_card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  } 
+
+  .social_links_card p {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .sunnyside_land {
+    width: 70%;
+    display: flex;
+    margin: 7rem auto;
+    gap: 5rem;
+  }
+
+  .sunnyside_land_des a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .sunnyside_land h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  } 
+
+  .sunnyside_land p {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Section 4 */
+
+  .section_4 {
+    width: 100%;
+    min-height: 65rem;
+    /* max-height: 50rem; */
+    background-image: url(https://www.rammaheshwari.com/assets/svg/common-bg.svg);
+    background-position: center;
+  }
+
+  .contact {
+    padding-top: 8rem;
+  }
+
+  .contact_head {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .contact_text {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .form_container {
+    display: block;
+    height: 75vh;
+    max-width: 80%;
+    background-color: #c1cacb;
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 1rem;
+  }
+
+  form {
+    display: grid;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  input[type=text], [type=email], textarea {
+    padding: 1rem;
+    margin: .5rem 0;
+    font-size: 1rem;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  input[type=submit] {
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #69eeff;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+  }
+
+  .footer {
+    height: 45vh;
+    width: 100%;
+    background-color: black;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0 2rem 0;
+  }
+
+  .footer_text {
+    width: 40%;
+    color: #f1f1f1;
+    /* background-color: yellow; */
+  }
+
+  .footer_logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  
+  .footer_logo span {
+    color: #69eeff;
+  }
+
+  .footer_text p {
+    line-height: 1.5rem;
+  }
+
+  .footer_social {
+    /* background-color: yellow; */
+    margin-left: -3rem;
+    padding-bottom: 1rem;
+    color: #f1f1f1;
+  }
+
+  .social_links a {
+    color: white;
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .bi:hover {
+    background-color: #69eeff;
+    padding: .3rem;
+    border-radius: .5rem;
+  }
+
+  .footer_copyright {
+    color: #f1f1f1;
+    text-align: center;
+    font-size: .8rem;
+  }
+
+
+  /* Media Queries */
+
+  /* Extra large devices (1200 and up) */
+  @media only screen and (max-width: 1200px) {
+    #nav_content {
+      max-width: 100%;
+    }
+
+    .home_social {
+      margin-left: -4rem;
+    }
+    
+    .home_content {
+      margin: 0 auto;
+    }
+
+    .project_btns {
+      margin-left: -7rem;
+      font-size: 1rem;
+    }
+
+    .form_container {
+      padding-top: 1rem;
+      /* margin: auto; */
+    }
+
+    form {
+      width: 100px;
+      margin: 0 -1.3rem;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: .5rem;
+      width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-size: .7rem;
+    }
+
+    input[type="submit"] {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+      margin-left: 12rem;
+    }
+
+    .footer {
+      height: 35vh;
+    }
+  }
+
+  /* Large devices (Laptops/destops, 992px) */
+  @media only screen and (max-width: 992px) {
+    .nav_text {
+      display: flex;
+    }
+
+    .nav_list {
+      display: none;
+    }
+
+    .home_content {
+      padding: 0 5rem;
+    }
+
+    .project_btns {
+      margin-left: -5rem;
+      font-size: 1rem;
+    }
+
+    .about_info_left, .about_info_right {
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    .project_text, .contact_text {
+      width: 80vw;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    #nav_content {
+      max-width: 100%;
+      min-height: 80px;
+    }
+
+    .nav_list {
+      display: block;
+      /* height: 20vh; */
+      margin-top: .5rem;
+    }
+
+    .nav_list.show {
+      display: block;
+      height: 20vh;
+    }
+
+    .home_social {
+      display: none;
+    }
+
+    .home_content {
+      padding: 0 2rem;
+    }
+
+    .name_content {
+      font-size: 2.6rem;
+      margin: 0 auto;
+    }
+
+    .name_text p {
+      font-size: 1.5rem;
+      padding-left: 2.5rem;
+      margin: 0 auto;
+    }
+
+    .project_btns {
+      margin-left: -8rem;
+      font-size: 1rem;
+    }
+
+    .pass_gen, .order_summary, .blog_card, .social_links_card, .sunnyside_land {
+      display: block;
+    }
+
+    .pass_gen_text {
+      margin: 0 auto;
+    }
+
+    .about_head, .project_head, .contact_head {
+      font-size: 1.8rem;
+    }
+
+    .about_content, .project_text, .contact_text {
+      font-size: 1.1rem;
+    }
+
+    .form_container {
+      padding-top: 1rem;
+      margin: auto;
+      height: 50vh;
+    }
+
+    form {
+      width: 500px;
+      margin: 0 -1.3rem;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: .5rem;
+      width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-size: .7rem;
+    }
+
+    input[type="submit"] {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+      margin-left: 12rem;
+    }
+
+  }
+
+  /* Small devices (Landscape phones, 576px and up) */
+  @media only screen and (max-width: 576px) {
+    .nav_logo {
+      font-size: 1.5rem;
+    }
+
+    #nav_content {
+      max-width: 100%;
+      min-height: 80px;
+    }
+
+    .home_content {
+      padding: 0 2rem;
+    }
+
+    .name_content {
+      font-size: 1.8rem;
+      margin: 0 auto;
+    }
+
+    .name_text {
+      font-size: 1rem;
+      margin: 0 auto;
+    }
+
+    .project_btns {
+      margin-left: -14rem;
+      font-size: 1rem;
+    }
+
+    .about_info_left h3 {
+      font-size: 1.5rem;
+    }
+
+    .about_info_left p {
+      font-size: 1rem;
+    }
+
+    .btn_contact {
+      font-size: 1rem;
+    }
+
+    .pass_gen, .order_summary, .blog_card, .social_links_card, .sunnyside_land {
+      display: block;
+    }
+
+    .pass_gen img {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .pass_gen_text {
+      margin: 0 auto;
+    }
+
+    .pass_gen_des p {
+      font-size: 1rem;
+      width: 400px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .pass_gen_des button {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+
+    .order_summary img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .order_summary_des p {
+      font-size: 1rem;
+      width: 400px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .order_summary_des button {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+
+    .blog_card img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .blog_card_des p {
+      font-size: 1rem;
+      width: 400px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .blog_card_des button {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+
+    .social_links_card img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .social_links_card_des p {
+      font-size: 1rem;
+      width: 400px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .social_links_card_des button {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+
+    .sunnyside_land img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .sunnyside_land_des p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .sunnyside_land_des button {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+
+    .about_head, .project_head, .contact_head {
+      font-size: 1.5rem;
+    }
+
+    .about_content, .project_text, .contact_text {
+      font-size: 1rem;
+    }
+
+    .form_container {
+      padding-top: 1rem;
+      margin: auto;
+      height: 70vh;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-size: .8rem;
+    }
+  }
+
+  /* Extra small devices (portrait phones, 390px and up) */
+  @media only screen and (max-width: 390px) {
+    .nav_logo {
+      font-size: 1.2rem;
+    }
+
+    .nav_list {
+      display: block;
+      margin-top: .5rem;
+    }
+
+    #nav_content {
+      max-width: 100%;
+    }
+
+    .home_content {
+      padding: 0 1rem;
+    }
+
+    .name_content {
+      font-size: 1.2rem;
+      margin: 0 auto;
+    }
+
+    .name_text p {
+      font-size: .8rem;
+      margin: auto;
+    }
+
+    .project_btns {
+      margin-left: -16rem;
+      font-size: .7rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .about {
+      margin-top: -5rem;
+    }
+
+    .about_info {
+      display: block;
+    }
+
+    .about_info_left h3 {
+      font-size: 1.5rem;
+    }
+
+    .about_info_left {
+      width: 90%;
+    }
+
+    .about_info_left p {
+      font-size: 1rem;
+    }
+
+    .btn_contact button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .skills {
+      width: 90%;
+      padding-bottom: .8rem;
+    }
+
+    .pass_gen, .order_summary, .blog_card, .social_links_card, .sunnyside_land {
+      display: block;
+    }
+
+    .pass_gen img {
+      margin: .8rem 0 .8rem 3rem;
+    }
+
+    .pass_gen_text {
+      margin: 0 auto;
+    }
+
+    .pass_gen_des p {
+      font-size: 1rem;
+      width: 300px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .pass_gen_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .order_summary img {
+      margin-bottom: .8rem;
+    }
+
+    .order_summary_des p {
+      font-size: 1rem;
+      width: 300px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .order_summary_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .blog_card img {
+      margin-bottom: .8rem;
+    }
+
+    .blog_card_des p {
+      font-size: 1rem;
+      width: 300px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .blog_card_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .social_links_card img {
+      margin-bottom: .8rem;
+    }
+
+    .social_links_card_des p {
+      font-size: 1rem;
+      width: 300px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .social_links_card_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .sunnyside_land img {
+      margin-bottom: .8rem;
+    }
+
+    .sunnyside_land_des p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .sunnyside_land_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .about_head, .project_head, .contact_head {
+      font-size: 1.2rem;
+    }
+
+    .about_content, .project_text, .contact_text {
+      font-size: .9rem;
+    }
+
+    .project {
+      margin-top: -5rem;
+    }
+
+    .form_container {
+      padding-top: 2rem;
+      height: 65vh;
+      width: 100%;
+    }
+
+    form {
+      width: 250px;
+      margin: 0 -2.9rem;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: .5rem;
+      width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-size: .7rem;
+    }
+
+    input[type="submit"] {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+      margin-left: 4.3rem;
+    }
+
+    .footer_container {
+      display: block;
+    }
+
+    .footer_text {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .footer_logo {
+      margin-bottom: 1rem;
+    }
+
+    .footer_p {
+      width: 300px;
+      font-size: .8rem;
+      margin: 0 0 2rem -3rem;
+    }
+
+    .footer_social {
+      margin: 0 -2.3rem;
+    }
+
+    .footer_social h3 {
+      margin-left: 13rem;
+      padding-bottom: 1rem;
+    }
+
+    .social_links {
+      margin-left: 9rem;
+    }
+
+    .bi {
+      font-size: 1.5rem;
+    }
+
+    .footer {
+      height: 55vh;
+    }
+  }
+
+/* Mobile Layout */
+@media only screen and (max-width: 768px) {
+  /* Adjust nav menu styles */
+  #nav_menu {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #close {
+    display: none;
+  }
+
+  /* Adjust section styles */
+  .section_1, .section_2, .section_3, .section_4 {
+    padding: 20px;
+  }
+}
+
+/* Tablet layout */
+@media only screen and (min-width: 769px) and (max-width: 1024) {
+  /* Adjust nav menu styles */
+  #nav_menu {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #close {
+    display: block;
+  }
+
+  /* Adjust section styles */
+  .section_1, .section_2, .section_3, .section_4 {
+    padding: 40px;
+  }
+}
+
+/* Desktop layout */
+@media only screen and (min-width: 1025px) {
+  /* Adjust nav menu styles */
+  #nav_menu {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #close {
+    display: none;
+  }
+
+  /* Adjust section styles */
+  .section_1, .section_2, .section_3, .section_4 {
+    padding: 60px;
+  }
+}
