@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -11,15 +10,22 @@ body {
 
 #header {
     background-color: #f1f1f1;
-  }
-
-  .hero {
     height: 10vh;
     width: 100%;
-    background-color: #f1f1ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    color: #201f1f;
+    /* z-index: 1000; */
+    /* position: fixed; */
+    /* background-color: red; */
   }
   
-  .nav {
+  /* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,11 +33,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #cfcfcf;
-    color: #201f1f;
+    /* background-color: #cfcfcf; */
+    /* background-color: red; */
+    /* color: #201f1f;
     z-index: 1000;
-    position: fixed;
-  }
+    position: fixed; 
+  } */
   
   .nav_logo {
     font-size: 24px;
@@ -172,9 +179,9 @@ body {
   }
 
   .project_btn {
-    display: inline-block;
-    align-items: end;
-    padding: 2rem 10rem 0 22rem;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
   }
 
   button {
@@ -681,9 +688,15 @@ body {
       margin: 0 auto;
     }
 
+    .project_btn {
+      display: block;
+      margin: 1rem 0 0 7rem;
+      text-align: center;
+    }
+
     .project_btns {
-      margin-left: -8rem;
-      font-size: 1rem;
+      font-size: .8rem;
+      font-weight: 700;
     }
 
     .pass_gen, .order_summary, .blog_card, .social_links_card, .sunnyside_land {
@@ -756,9 +769,15 @@ body {
       margin: 0 auto;
     }
 
+    .project_btn {
+      display: block;
+      margin: 1rem 0 0 7rem;
+      text-align: center;
+    }
+
     .project_btns {
-      margin-left: -14rem;
-      font-size: 1rem;
+      font-size: .8rem;
+      font-weight: 700;
     }
 
     .about_info_left h3 {
@@ -893,6 +912,10 @@ body {
 
   /* Extra small devices (portrait phones, 390px and up) */
   @media only screen and (max-width: 390px) {
+    .nav { 
+      width: 90%;
+      margin: 0 auto;
+    }
     .nav_logo {
       font-size: 1.2rem;
     }
@@ -920,10 +943,14 @@ body {
       margin: auto;
     }
 
+    .project_btn {
+      display: block;
+      margin: 1rem 0 0 7rem;
+      text-align: center;
+    }
+
     .project_btns {
-      margin-left: -16rem;
-      font-size: .7rem;
-      padding: .8rem 2rem;
+      font-size: .8rem;
       font-weight: 700;
     }
 
@@ -987,7 +1014,7 @@ body {
 
     .order_summary img {
       margin-bottom: .8rem;
-    }
+   }
 
     .order_summary_des p {
       font-size: 1rem;
@@ -1071,7 +1098,7 @@ body {
 
     .form_container {
       padding-top: 2rem;
-      height: 70vh;
+      height: 65vh;
       width: 100%;
     }
 
