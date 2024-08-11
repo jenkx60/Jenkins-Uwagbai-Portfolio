@@ -1280,6 +1280,311 @@ body {
     }
   }
 
+  /* Extra small devices (portrait phones, 320px and up) */
+  @media only screen and (max-width: 320px) {
+    .hero {
+      /* width: 100%; */
+      /* background-color: yellow; */
+      /* width: 50%; */
+      /* display: flex; */
+      /* justify-content: space-between; */
+      /* flex-direction: row; */
+      /* align-items: center; */
+      /* justify-content: center; */
+    }
+
+    .nav { 
+      width: 100%;
+      /* background-color: yellow; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      position: relative;
+      /* margin: 0 auto; */
+    }
+
+    .nav_text {
+      height: 30dvh;
+      width: 50%;
+      position: absolute;
+      top: 10vh;
+      background-color: #f1f1f1;
+      align-items: right;
+      right: 0;
+      z-index: 999;
+      display: none;
+    }
+
+    .nav_text.on {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .open {
+      opacity: 1;
+    }
+
+    .nav_text a {
+      display: block;
+      /* padding: .5rem; */
+    }
+
+    .nav_logo {
+      font-size: 1.2rem;
+    }
+
+    .nav_list {
+      display: block;
+      margin-top: .5rem;
+    }
+
+    #nav_content {
+      max-width: 100%;
+    }
+
+    .home_content {
+      padding: 2rem 1rem;
+    }
+
+    .name_content {
+      font-size: 1rem;
+      margin: 0 0 0 -.6rem;
+    }
+
+    .name_text p {
+      font-size: .8rem;
+      margin: auto;
+    }
+
+    .project_btn {
+      display: block;
+      margin: 1rem 0 0 7rem;
+      text-align: center;
+    }
+
+    .project_btns {
+      font-size: .8rem;
+      font-weight: 700;
+    }
+
+    .about {
+      margin-top: -5rem;
+    }
+
+    .about_info {
+      display: block;
+    }
+
+    .about_info_left h3 {
+      font-size: 1.5rem;
+    }
+
+    .about_info_left {
+      width: 90%;
+    }
+
+    .about_info_left p {
+      font-size: 1rem;
+    }
+
+    .btn_contact button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .skills {
+      width: 90%;
+      padding-bottom: .8rem;
+    }
+
+    .pass_gen, .order_summary, .blog_card, .social_links_card, .sunnyside_land {
+      display: block;
+    }
+
+    .pass_gen img {
+      margin: .8rem 0 .8rem 3rem;
+    }
+
+    .pass_gen_text {
+      margin: 0 auto;
+    }
+
+    .pass_gen_des p {
+      font-size: 1rem;
+      width: 250px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .pass_gen_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .order_summary img {
+      margin-bottom: .8rem;
+   }
+
+    .order_summary_des p {
+      font-size: 1rem;
+      width: 250px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .order_summary_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .blog_card img {
+      margin-bottom: .8rem;
+    }
+
+    .blog_card_des p {
+      font-size: 1rem;
+      width: 250px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .blog_card_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .social_links_card img {
+      margin-bottom: .8rem;
+    }
+
+    .social_links_card_des p {
+      font-size: 1rem;
+      width: 250px;
+      height: 85px;
+      overflow: scroll;
+      text-overflow: ellipsis;
+      margin-bottom: 2rem;
+    }
+
+    .social_links_card_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .sunnyside_land img {
+      margin-bottom: .8rem;
+    }
+
+    .sunnyside_land_des p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .sunnyside_land_des button {
+      font-size: .8rem;
+      padding: .8rem 2rem;
+      font-weight: 700;
+    }
+
+    .about_head, .project_head, .contact_head {
+      font-size: 1.2rem;
+    }
+
+    .about_content, .project_text, .contact_text {
+      font-size: .9rem;
+    }
+
+    .project {
+      margin-top: -5rem;
+    }
+
+    .form_container {
+      padding-top: 2rem;
+      height: 77dvh;
+      width: 100%;
+    }
+
+    form {
+      width: 100px;
+      margin: 0 -2.9rem;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: .5rem;
+      width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-size: .5rem;
+    }
+
+    input[type="submit"] {
+      font-size: .8rem;
+      padding: .6rem 2rem;
+      font-weight: 700;
+      margin-left: 4.3rem;
+    }
+
+    .footer_container {
+      display: block;
+    }
+
+    .footer_text {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .footer_logo {
+      margin-bottom: 1rem;
+      width: 200px;
+    }
+
+    .footer_p {
+      width: 250px;
+      font-size: .8rem;
+      margin: 0 0 2rem -2.5rem;
+      background-color: red;
+    }
+
+    .footer_social {
+      margin: 0 -4.5rem;
+    }
+
+    .footer_social h3 {
+      margin-left: 13rem;
+      padding-bottom: 1rem;
+    }
+
+    .social_links {
+      margin-left: 9rem;
+    }
+
+    .bi {
+      font-size: 1.5rem;
+    }
+
+    .footer {
+      height: 70dvh;
+    }
+  }
+
+
 /* Mobile Layout */
 @media only screen and (max-width: 768px) {
   /* Adjust nav menu styles */
