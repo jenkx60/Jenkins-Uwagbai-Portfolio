@@ -1281,7 +1281,7 @@ body {
   }
 
   /* Extra small devices (portrait phones, 320px and up) */
-  @media only screen and (max-width: 320px) {
+ @media only screen and (min-width: 320px) and (max-width: 389px) {
     .hero {
       /* width: 100%; */
       /* background-color: yellow; */
