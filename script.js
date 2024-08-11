@@ -5,15 +5,15 @@ let menuBtn = document.getElementById('menu');
 let closeBtn = document.getElementById('close');
 
 menuBtn.addEventListener('click', () => {
-    navMenu.classList.add('show');
-    menuBtn.classList.add('hide');
-    closeBtn.classList.add('show');
+    navMenu.classList.toggle('show');
+    menuBtn.classList.toggle('hide');
+    closeBtn.classList.toggle('hide');
 });
 
 closeBtn.addEventListener('click', () => {
-    navMenu.classList.remove('show');
-    menuBtn.classList.remove('hide');
-    closeBtn.classList.remove('show');
+    navMenu.classList.toggle('hide');
+    menuBtn.classList.toggle('hide');
+    closeBtn.classList.toggle('hide');
 });
 
 // Smooth scrolling to sections
