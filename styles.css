@@ -1004,7 +1004,7 @@ body {
     }
 
     .nav_text {
-      height: 30vh;
+      height: 30dvh;
       width: 50%;
       position: absolute;
       top: 10vh;
