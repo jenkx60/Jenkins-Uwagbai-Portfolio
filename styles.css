@@ -1004,7 +1004,7 @@ body {
     }
 
     .nav_text {
-      height: 25vh;
+      height: 28vh;
       width: 50%;
       position: absolute;
       top: 10vh;
@@ -1214,7 +1214,7 @@ body {
 
     .form_container {
       padding-top: 2rem;
-      height: 65vh;
+      height: 70vh;
       width: 100%;
     }
 
