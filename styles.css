@@ -1,3 +1,147 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #494051;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: #66BFBF;
+    margin: 50px auto 0 auto;
+    font-family: 'Merriweather', cursive;
+    font-size: 5.3rem;
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    line-height: 2.2;
+}
+
+hr {
+    border: double 10px;
+    border-color: #135353;
+    border-bottom: none;
+    width: 4%;
+    margin: 67px auto;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.top-container {
+    background-image: url(images/code.jpg);
+    position: relative;
+    padding-top: 100.5px;
+}
+
+.middle-container {
+    margin: 70px 0;
+}
+
+.bottom-container {
+    background-color: #a45dad;
+    padding: 50px 0 20px;
+    background-image: url(images/code.jpg);
+}
+
+.skill-row {
+    width: 51%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+    text-align: left;
+}
+
+.computer-img {
+    float: right;
+    margin-left: 30px;
+    width: 20px;
+}
+
+.idea-img {
+    float: right;
+    margin-left: 30px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.80rem;
+    padding: 20px 0;
+}
+
+.topheader {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.botttomheader {
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
+}
+
+.contact-me {
+    width: 41%;
+    margin: 40px auto 60px;
+}
+
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    border-radius:8px;
+    color: #ffffff;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 12px;
+    text-shadow: 1px 1px 21px #000000;
+    border: 0 #337FED solid;
+    text-decoration: none;
+    display:inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    border: solid #337FED 1px;
+    background: #30E3CD;
+    background-image: -webkit-linear-gradient(top, #30E3CD, #2BC4AD);
+    background-image: -moz-repeating-linear-gradient(top, #30E3CD, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CD, #2BC4AD);
+    border-radius: 20px;
+    text-decoration: none;
+} */
+
+
 * {
     padding: 0;
     margin: 0;
@@ -472,9 +616,23 @@ body {
     line-height: 1.8rem;
   }
 
+  .contact_info {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #c1cacb;
+  }
+
+  .contact_info_data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
   .form_container {
     display: block;
-    height: 85vh;
+    height: 75vh;
     max-width: 80%;
     background-color: #c1cacb;
     margin: 0 auto;
@@ -625,7 +783,7 @@ body {
   }
 
   /* Large devices (Laptops/destops, 992px) */
-  @media only screen and (max-width: 992px) {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .nav_text {
       display: flex;
     }
@@ -654,7 +812,7 @@ body {
   }
 
   /* Medium devices (tablets, 768px and up) */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .nav { 
       width: 100%;
       display: flex;
@@ -785,7 +943,7 @@ body {
   }
 
   /* Small devices (Landscape phones, 576px and up) */
-  @media only screen and (max-width: 576px) {
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
     .nav { 
       width: 100%;
       display: flex;
@@ -991,7 +1149,7 @@ body {
   }
 
   /* Extra small devices (portrait phones, 390px and up) */
-    @media only screen and (min-width: 390px) and (max-width: 575px) {
+  @media only screen and (min-width: 390px) and (max-width: 575px) {
     .nav { 
       width: 100%;
       display: flex;
@@ -1214,7 +1372,7 @@ body {
 
     .form_container {
       padding-top: 2rem;
-      height: 75vh;
+      height: 65vh;
       width: 100%;
     }
 
@@ -1281,18 +1439,7 @@ body {
   }
 
   /* Extra small devices (portrait phones, 320px and up) */
- @media only screen and (min-width: 320px) and (max-width: 389px) {
-    .hero {
-      /* width: 100%; */
-      /* background-color: yellow; */
-      /* width: 50%; */
-      /* display: flex; */
-      /* justify-content: space-between; */
-      /* flex-direction: row; */
-      /* align-items: center; */
-      /* justify-content: center; */
-    }
-
+  @media only screen and (min-width: 320px) and (max-width: 389px) {
     .nav { 
       width: 100%;
       /* background-color: yellow; */
@@ -1516,9 +1663,9 @@ body {
 
     .form_container {
       padding-top: 2rem;
-      height: 100px;
+      height: 75dvh;
       width: 100%;
-    bacgroung-color:red;
+      background-color: red;
     }
 
     form {
