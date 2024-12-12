@@ -472,6 +472,20 @@ body {
     line-height: 1.8rem;
   }
 
+    .contact_info {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #c1cacb;
+  }
+
+  .contact_info_data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
   .form_container {
     display: block;
     height: 85vh;
